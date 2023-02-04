@@ -179,21 +179,12 @@ main {
     background-color: white;
 }
 
-.item .image-container {
-    width: 10rem;
-    height: 10rem;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 15px;
-}
-
-.item img {
+.item-image {
     width: 100%;
     mix-blend-mode: multiply;
     aspect-ratio: 4/3;
     object-fit: contain;
+    margin-bottom: 15px;
 }
 
 .item .item-title {
