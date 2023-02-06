@@ -1,8 +1,13 @@
-const Categories = (props) => {
+import React, { useContext } from "react";
+import { Context } from "../Context";
+
+const Categories = () => {
+    const { categories, filterItem } = useContext(Context);
+
     return (
         <div className="categery-container">
-            {props.categories.map((category, index) => (
-                <p key={index} onClick={() => props.filterItem(category)}>
+            {categories.map((category, index) => (
+                <p key={index} onClick={() => filterItem(category)}>
                     {category.toUpperCase()}
                 </p>
             ))}

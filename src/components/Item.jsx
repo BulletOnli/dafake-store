@@ -5,9 +5,7 @@ const Item = (props) => {
             <p className="item-title">{props.item.title.substring(0, 36)}</p>
             <span>
                 <p className="price">${props.item.price}</p>
-                <button onClick={() => props.onclick(props.item.price)}>
-                    Add to Cart
-                </button>
+                <button onClick={props.onclick}>Add to Cart</button>
             </span>
         </div>
     );
