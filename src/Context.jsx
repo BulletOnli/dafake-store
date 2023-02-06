@@ -9,7 +9,6 @@ const ContextProvider = ({ children }) => {
     const [categories, setCategories] = useState([]);
     const [isCartShown, setIsCartShown] = useState(false);
 
-    // Temporary data for filtered Items
     // tempData is the array of filtered items to show in every categories
     const [tempData, setTempData] = useState([]);
 
